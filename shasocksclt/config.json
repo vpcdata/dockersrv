@@ -1,0 +1,9 @@
+{
+    "server":"108.61.86.132",
+    "server_port":8004,
+    "local_port":1081,
+    "local_address":"127.0.0.1",
+    "password":"sdpass",
+    "method": "aes-256-cfb",
+    "timeout":3600
+}

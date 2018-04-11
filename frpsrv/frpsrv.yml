@@ -1,0 +1,15 @@
+version: "3"
+services:
+  frps:
+    # replace username/repo:tag with your name and image details
+    image: vpcdata/frpsrv:1.0
+    ports:
+      - "60000-62000:60000-62000"
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+    networks:
+      - frpsnet
+networks:
+  frpsnet:
